@@ -17,43 +17,31 @@
 <body>
     <div class="main-container">
         <header>
-            <a href="index.html">
-                <img src="images/logo/Booki.png" alt="logo Booki">
-            </a>
-
             <nav>
-                <div class="lien">
-                    <div class="lien-element">
-                        <div class="ligne-dessus activ-lien"></div>
-                        <a href="Hebergements" class="element">Hébergements</a>
-                    </div>
-                </div>
-                <div class="lien">
-                    <div class="lien-element">
-                        <div class="ligne-dessus"></div>
-                        <a href="Activites" class="element">Activités</a>
-                    </div>
+                <img src="./images/logo/Booki.png" alt="Logo booki"/>
+                <div>
+                    <a href="#heberg">Hébergements</a>
+                    <a href="#activ">Activités</a>
                 </div>
             </nav>
-
         </header>
-        
         <main>
             <section class="title">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                     <!--formulaire de recherche-->
                     <form action="" class="recherche">
-                        <div class="conatiner">
-                            <div class="icone">
+                        <div class="container">
+                            <div class="icone-container">
                                 <i class="fa-solid fa-location-dot" class="icone"></i>
                             </div>
-                            <div class="texte">
-                                <input type="text" name="texte" value="Marseille, France">
-                            </div>
-                            <div class="button">
+                            <div class="texte-container">
+                                <label for="ville"></label>
+                                <!--pour les non-voyants pour toute la formule avec title à la fin-->
+                                <input type="text" id="ville" name="texte" value="Marseille, France" title="Entrez le nom d'une ville">
                                 <button type="submit" name="rechercher">Rechercher</button>
                             </div>
+                        </div>
                     </form>
                     <!--Filtres-->
                     <div class="filtres">
