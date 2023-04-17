@@ -1,3 +1,4 @@
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -202,21 +203,28 @@ button[type="submit"]:hover {
 
 /*les cards*/
 .card {
-    width: 65%;
-    height: 50%;
-    max-width: 250.33px;
+    width: 166.68px;
+    height: 248.27px;
     margin: 0px auto;
     background-color: white;
     border-radius: 20px;
     padding: 2px 2px 2px 2px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));    
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-bottom: 10px;
+    justify-content: space-between;    
 }
 
 .card img {
     object-fit: cover;
-    width: 100%;
+    width: 90%;
+    height: 90%;
+    max-height: 80.6px;
     height: auto;
     border-radius: 20px 20px 0 0;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: 5px;
+
 }
 
 .card-subtitle {
@@ -274,7 +282,8 @@ p {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
+    
 }
 
 
