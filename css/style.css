@@ -203,7 +203,6 @@ button[type="submit"]:hover {
 
 /*les cards*/
 .card {
-    width: 166.68px;
     height: 248.27px;
     margin: 0px auto;
     background-color: white;
@@ -214,24 +213,41 @@ button[type="submit"]:hover {
     justify-content: space-between;    
 }
 
-.card img {
-    object-fit: cover;
-    width: 90%;
-    height: 90%;
-    max-height: 80.6px;
-    height: auto;
-    border-radius: 20px 20px 0 0;
-    align-items: center;
-    margin-left: 5px;
-    margin-top: 5px;
+.hebergements-cards .card {
+    width: 29%;
+}
 
+.hebergements-cards img.card {
+    object-fit: cover;
+    width: 98%;
+    max-height: 40%;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.hebergements-cards .card .card-content {
+    max-height: 55%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hebergements-cards .card .card-content .card-rating{
+    flex-grow: 1;
+}
+
+.hebergements-cards p.card-title {
+    padding-top: 0px;
+}
+
+.hebergements-cards div.card-rating {
+    padding-top: 0px;
 }
 
 .card-subtitle {
     margin: 10px;
     padding: 10p
 }
-
 
 .card-title {
     font-size: 16px;
@@ -254,7 +270,7 @@ button[type="submit"]:hover {
 
 /****** Hebergements And Populaires ***********/
 
-p {
+h2 {
     font-size: 18px;
     color: #000;
 }
@@ -282,21 +298,8 @@ p {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    
+    gap: 30px;   
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /****** Populaires ***********/
 .populaires {
@@ -312,11 +315,14 @@ p {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    height: 128px;
+    
 }
 
 .populaires-cards img {
-    width: 33%;
-    height: 136px;
+    object-fit: cover;
+    width: 35%;
+    height: 128px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -343,8 +349,42 @@ p {
     margin-bottom: 5px;
 }
 
+/*Activités à Marseille*/
+
+.activites {
+    width: 100%;
+    border-radius: 20px 20px 20px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.activites-card img {
+    color: #ffffff;
+    width: 286.75px;
+    height: 344.72px;
+    border-radius: 20px 20px 0px 0px;
+}
 
 
+div.activites-a-marseille {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+/*footer*/
+
+footer {
+    margin-top: 60px;
+}
+div.directionRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #F2F2F2
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
