@@ -17,6 +17,7 @@
 
 
 .main-container {
+    margin: auto;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -343,7 +344,7 @@ h2 {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;   
+    /*gap: 30px;*/   
 }
 
 /****** Populaires ***********/
@@ -406,13 +407,15 @@ h2 {
 
 div.activites-card img {
     color: #ffffff;
-    width: 286.75px;
+    width: 100%; 
+    object-fit: cover;/*a revoir pour explication*/
     height: 344.72px;
     border-radius: 20px 20px 0px 0px;
 }
 
 
 div.activites-a-marseille {
+    width: 23%;/*pour les espaces entre les images*/
     background-color: #f5f5f5;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -503,7 +506,7 @@ div.directionRow {
 
 
 /*petits appareils - portables*/
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 786px) {
 
     body {
         margin: 0;
@@ -555,14 +558,14 @@ div.directionRow {
 
       a.lien1 {
         position: relative;
-        left: -80px;
+        left: -100px;
         border-top: none;
         border-bottom: #0065FC 2px solid;
       }
 
       a.lien2 {
         position: relative;
-        right: -50px;
+        right: -40px;
         border-top: none;
         border-bottom: #0065FC 2px solid;
       }
