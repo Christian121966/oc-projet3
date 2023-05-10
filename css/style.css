@@ -117,7 +117,7 @@ label {
 
 input[type="text"], button[type="submit"] {
     border: none;
-    height: 50px;
+    height: 43px;
     font-size: 16px;
 }
 
@@ -129,13 +129,17 @@ input[type="text"] {
     border-bottom: 1px solid #f5f5f5;
 }
 
+.icone-recherche {
+    display: none;
+}
+
 button[type="submit"] {
     background-color: #0065FC;
-    color: white
+    color: white;
     border-radius: 0px 15px 15px 0px;
     padding: 0 20px;
-    border-radius: 0 15px 15px 0;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button[type="submit"]:hover {
@@ -439,6 +443,10 @@ div.directionRow {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    nav div {
+        margin-left: 48%;
+    }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -482,16 +490,139 @@ div.directionRow {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+    body {
+        margin: 0px;
+    }
+
+    .main-container {
+        padding: 0px;
+        max-width: 767.98px;
+    }
+
+    header {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+
+      .conteneur {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        margin-left: 0px;
+      }
+
+      nav a.lien1 {
+        display: flex;
+        border-top: none;
+        margin-left: -100px;
+      }
+
+      nav a.lien1:hover {
+        border-bottom: #0065FC 2px solid;
+      }
+
+      nav a.lien2 {
+        display: flex;
+        border-top: none;
+      }
+
+      nav a.lien2:hover {
+        border-bottom: #0065FC 2px solid;
+      }
+
+      section.titre {
+        margin: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .texte-recherche {
+        display: none;
+      }
+
+      .icone-recherche {
+        display: flex;
+      }
+
+      /*Les filtres*/
+
+      .filtres {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+      }
+
+      .filtres ul {
+        flex-wrap: wrap;
+      }
+
+      /*information*/
+
+      #informations {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+      }
+
+
+      /*activiteés à Marseille*/
+
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+
+    section.hebergements {
+      order: 2;
+    }
+
+    section.populaires {
+      order: 1;
+    }
+
+    .hebergements-and-populaires section {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        
+    }
+
+    .hebergements-cards {
+        flex-direction: column;
+    }
+
+    .hebergements-cards .card {
+        margin: 0;
+        width: 100%;
+        height: 5%;
+        
     }
 
     .hebergements .populaires {
         width: 100%;
     }
 
+    .populaires-cards {
+        flex-direction: column;
+    }
+
     .populaires-cards .card {
-        width: 45%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -501,12 +632,43 @@ div.directionRow {
     .populaires-cards .card-subtitle {
         font-size: 11px;
     }
+
+    .populaires-cards .card-subtitle {
+        padding-left: 11px;
+    }
+
+    section.activites {
+      flex-direction: column;
+    }
+
+    div.activites-a-marseille {
+      width: 100%;
+    }
+
+    h4 {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+    }
+
+    /*Footer*/
+
+    div.directionRow {
+      flex-direction: column;
+    }
+
+
+    /*div.activites-card img {
+      width: 100%;
+      object-fit: cover;
+    }*/
 }
 
 
 
 /*petits appareils - portables*/
-@media only screen and (max-width: 786px) {
+
+/*@media only screen and (max-width: 786px) {
 
     body {
         margin: 0;
@@ -772,12 +934,9 @@ div.directionRow {
       
       
     
-}
+}*/
 
 
-    
-
-    
 
 
 
